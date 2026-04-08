@@ -6,11 +6,27 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		89AEA1822F86D363005F0565 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89D546D12F734B3C00BA8B93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89D546D82F734B3C00BA8B93;
+			remoteInfo = Selah;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		89D546D92F734B3C00BA8B93 /* Selah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Selah.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89AEA17E2F86D363005F0565 /* SelahTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelahTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89D546D92F734B3C00BA8B93 /* Selah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Selah.app; path = "/Users/phojung/Desktop/project/Selah/build/Debug-iphoneos/Selah.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		89AEA17F2F86D363005F0565 /* SelahTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SelahTests;
+			sourceTree = "<group>";
+		};
 		89D546DB2F734B3C00BA8B93 /* Selah */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Selah;
@@ -19,6 +35,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		89AEA17B2F86D363005F0565 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		89D546D62F734B3C00BA8B93 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,21 +56,37 @@
 			isa = PBXGroup;
 			children = (
 				89D546DB2F734B3C00BA8B93 /* Selah */,
-				89D546DA2F734B3C00BA8B93 /* Products */,
+				89AEA17E2F86D363005F0565 /* SelahTests.xctest */,
+				89AEA17F2F86D363005F0565 /* SelahTests */,
 			);
-			sourceTree = "<group>";
-		};
-		89D546DA2F734B3C00BA8B93 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				89D546D92F734B3C00BA8B93 /* Selah.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		89AEA17D2F86D363005F0565 /* SelahTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89AEA1842F86D363005F0565 /* Build configuration list for PBXNativeTarget "SelahTests" */;
+			buildPhases = (
+				89AEA17A2F86D363005F0565 /* Sources */,
+				89AEA17B2F86D363005F0565 /* Frameworks */,
+				89AEA17C2F86D363005F0565 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89AEA1832F86D363005F0565 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				89AEA17F2F86D363005F0565 /* SelahTests */,
+			);
+			name = SelahTests;
+			packageProductDependencies = (
+			);
+			productName = SelahTests;
+			productReference = 89AEA17E2F86D363005F0565 /* SelahTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		89D546D82F734B3C00BA8B93 /* Selah */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89D546E42F734B3E00BA8B93 /* Build configuration list for PBXNativeTarget "Selah" */;
@@ -80,6 +119,10 @@
 				LastSwiftUpdateCheck = 2630;
 				LastUpgradeCheck = 2630;
 				TargetAttributes = {
+					89AEA17D2F86D363005F0565 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = 89D546D82F734B3C00BA8B93;
+					};
 					89D546D82F734B3C00BA8B93 = {
 						CreatedOnToolsVersion = 26.3;
 					};
@@ -95,16 +138,24 @@
 			mainGroup = 89D546D02F734B3C00BA8B93;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 89D546DA2F734B3C00BA8B93 /* Products */;
+			productRefGroup = 89D546D02F734B3C00BA8B93;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				89D546D82F734B3C00BA8B93 /* Selah */,
+				89AEA17D2F86D363005F0565 /* SelahTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		89AEA17C2F86D363005F0565 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		89D546D72F734B3C00BA8B93 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +166,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		89AEA17A2F86D363005F0565 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		89D546D52F734B3C00BA8B93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +182,55 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		89AEA1832F86D363005F0565 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89D546D82F734B3C00BA8B93 /* Selah */;
+			targetProxy = 89AEA1822F86D363005F0565 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		89AEA1852F86D363005F0565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamespark.SelahTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Selah.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Selah";
+			};
+			name = Debug;
+		};
+		89AEA1862F86D363005F0565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamespark.SelahTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Selah.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Selah";
+			};
+			name = Release;
+		};
 		89D546E22F734B3E00BA8B93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -309,6 +415,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		89AEA1842F86D363005F0565 /* Build configuration list for PBXNativeTarget "SelahTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89AEA1852F86D363005F0565 /* Debug */,
+				89AEA1862F86D363005F0565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		89D546D42F734B3C00BA8B93 /* Build configuration list for PBXProject "Selah" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
