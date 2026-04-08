@@ -12,12 +12,14 @@ import Foundation
 
 struct AppLimitTests {
 
-    @Test func defaultInitializerSetsActiveTrue() {
+    @Test("Default initializer sets isActive to true")
+    func defaultInitializerSetsActiveTrue() {
         let limit = AppLimit(bundleIdentifier: "com.example.app", dailyMinutes: 30)
         #expect(limit.isActive == true)
     }
 
-    @Test func initializerAssignsProperties() {
+    @Test("Initializer correctly assigns all properties")
+    func initializerAssignsProperties() {
         let id = UUID()
         let limit = AppLimit(id: id, bundleIdentifier: "com.example.app", dailyMinutes: 60, isActive: false)
         #expect(limit.id == id)
@@ -26,20 +28,23 @@ struct AppLimitTests {
         #expect(limit.isActive == false)
     }
 
-    @Test func defaultIdIsUnique() {
+    @Test("Default id is unique across instances")
+    func defaultIdIsUnique() {
         let first = AppLimit(bundleIdentifier: "com.example.app", dailyMinutes: 10)
         let second = AppLimit(bundleIdentifier: "com.example.app", dailyMinutes: 10)
         #expect(first.id != second.id)
     }
 
-    @Test func equalityComparesAllProperties() {
+    @Test("Two instances with identical properties are equal")
+    func equalityComparesAllProperties() {
         let id = UUID()
         let a = AppLimit(id: id, bundleIdentifier: "com.example.app", dailyMinutes: 30, isActive: true)
         let b = AppLimit(id: id, bundleIdentifier: "com.example.app", dailyMinutes: 30, isActive: true)
         #expect(a == b)
     }
 
-    @Test func inequalityWhenPropertiesDiffer() {
+    @Test("Two instances with differing properties are not equal")
+    func inequalityWhenPropertiesDiffer() {
         let id = UUID()
         let a = AppLimit(id: id, bundleIdentifier: "com.example.app", dailyMinutes: 30, isActive: true)
         let b = AppLimit(id: id, bundleIdentifier: "com.example.app", dailyMinutes: 60, isActive: true)
