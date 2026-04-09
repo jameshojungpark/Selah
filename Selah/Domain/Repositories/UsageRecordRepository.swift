@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol UsageRepository {
+protocol UsageRecordRepository {
     func fetchTodayUsage() async throws -> [UsageRecord]
     func fetchWeeklyUsage() async throws -> [UsageRecord]
 }
