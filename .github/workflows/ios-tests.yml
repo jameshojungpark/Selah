@@ -28,7 +28,7 @@ jobs:
           xcodebuild test \
             -project Selah.xcodeproj \
             -scheme Selah \
-            -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.4'  \
+            -destination 'platform=iOS Simulator,name=iPhone 16'  \
             -resultBundlePath TestResults.xcresult \
             | xcpretty
 
