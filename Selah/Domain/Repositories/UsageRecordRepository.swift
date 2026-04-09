@@ -2,13 +2,13 @@
 //  UsageRepository.swift
 //  Selah
 //
-//  Created by James Park on 2026-04-09.
+//  Created by 박호정 on 2026-04-09.
 //
 
 
 import Foundation
 
-protocol UsageRecordRepository {
+protocol UsageRepository {
     func fetchTodayUsage() async throws -> [UsageRecord]
     func fetchWeeklyUsage() async throws -> [UsageRecord]
 }
