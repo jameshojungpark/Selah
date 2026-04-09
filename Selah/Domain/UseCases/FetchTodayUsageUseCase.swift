@@ -13,9 +13,9 @@ protocol FetchTodayUsageUseCase {
 }
 
 final class FetchTodayUsageUseCaseImpl: FetchTodayUsageUseCase {
-    private let repository: UsageRepository
+    private let repository: UsageRecordRepository
 
-    init(repository: UsageRepository) {
+    init(repository: UsageRecordRepository) {
         self.repository = repository
     }
 
