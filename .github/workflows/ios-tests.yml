@@ -20,11 +20,9 @@ jobs:
       - name: Select Xcode
         run: sudo xcode-select -s /Applications/Xcode_16.3.app
 
-      # 1. Download the missing iOS Simulator runtime
       - name: Download iOS Simulator Runtime
         run: xcodebuild -downloadPlatform iOS
 
-      # 2. Run Tests using a simplified destination specifier
       - name: Run Tests
         run: |
           xcodebuild test \
