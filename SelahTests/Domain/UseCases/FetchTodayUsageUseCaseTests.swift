@@ -10,7 +10,7 @@ import Foundation
 
 @testable import Selah
 
-private final class MockUsageRepository: UsageRepository {
+private final class MockUsageRepository: UsageRecordRepository {
     var todayRecords: [UsageRecord] = []
     var shouldThrow = false
 
