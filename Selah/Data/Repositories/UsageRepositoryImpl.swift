@@ -11,7 +11,11 @@ import Foundation
 final class UsageRepositoryImpl: UsageRecordRepository {
 
     // Replace with DeviceActivity framework
-    private var records: [UsageRecord] = []
+    private var records: [UsageRecord]
+
+    init(records: [UsageRecord] = []) {
+        self.records = records
+    }
 
     func fetchTodayUsage() async throws -> [UsageRecord] {
         let today = Calendar.current.startOfDay(for: .now)
