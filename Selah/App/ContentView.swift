@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Selah
 //
-//  Created by 박호정 on 2026-04-09.
+//  Created by James Park on 2026-04-09.
 //
 
 
@@ -21,15 +21,6 @@ struct ContentView: View {
                     Label("Limits", systemImage: "hourglass")
                 }
 
-            Text("Sacred Hours")
-                .tabItem {
-                    Label("Sacred", systemImage: "moon.stars")
-                }
-
-            Text("Reflect")
-                .tabItem {
-                    Label("Reflect", systemImage: "heart")
-                }
         }
     }
 }
