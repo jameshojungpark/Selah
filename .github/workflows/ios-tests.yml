@@ -24,7 +24,6 @@ jobs:
         run: |
           sudo xcodebuild -runFirstLaunch
           xcrun simctl help > /dev/null
-
       - name: Install iOS 18.4 Simulator Runtime
         uses: muukii/actions-xcode-install-simulator@v3
         with:
@@ -38,7 +37,6 @@ jobs:
             -destination "platform=iOS Simulator,name=iPhone 16" \
             -resultBundlePath TestResults.xcresult \
             | xcpretty
-
       - name: Upload Test Results
         if: always()
         uses: actions/upload-artifact@v4
