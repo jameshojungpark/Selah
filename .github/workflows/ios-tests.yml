@@ -1,11 +1,12 @@
 name: iOS Tests
 
 on:
-  push:
-    branches:
-      - main
-      - develop
-      - hotfix/*
+  # push:
+  #   branches:
+  #     - main
+  #     - develop
+  #     - hotfix/*
+  workflow_dispatch:
 
 jobs:
   test:
